@@ -51,6 +51,7 @@
 # Force all new branches to automatically use rebase
 [pull]
   rebase = true
+  autostash = true
 
 # Push easily. http://stackoverflow.com/a/23918418/89484
 [push]
