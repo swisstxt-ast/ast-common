@@ -6,3 +6,10 @@
 # If you are always using a Linux shell for git you can uncomment this to fix colors in git diffs:
 # [core]
 #   pager = less -R
+
+# If you use macOS/Linux and want to sign your commits with gpg, pick either:
+# [gpg]
+#   program = /opt/homebrew/bin/gpg
+#   program = /usr/local/MacGPG2/bin/gpg # https://gpgtools.org/
+#   program = /usr/bin/gpg
+
