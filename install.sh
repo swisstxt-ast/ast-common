@@ -24,3 +24,13 @@ backup_and_link "$(pwd)/.gitignore" "$HOME/.gitignore"
 backup_and_link "$(pwd)/.gitconfig.user" "$HOME/.gitconfig.user"
 
 backup_and_link "$(pwd)/.editorconfig" "$HOME/.editorconfig"
+
+backup_and_link "$(pwd)/.npmrc" "$HOME/.npmrc"
+backup_and_link "$(pwd)/.yarnrc.yml" "$HOME/.yarnrc.yml"
+backup_and_link "$(pwd)/bunfig.toml" "$HOME/.bunfig.toml"
+
+config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+mkdir -p "$config_home/uv" "$config_home/pip"
+
+backup_and_link "$(pwd)/.config/uv/uv.toml" "$config_home/uv/uv.toml"
+backup_and_link "$(pwd)/.config/pip/pip.conf" "$config_home/pip/pip.conf"

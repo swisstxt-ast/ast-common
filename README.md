@@ -33,5 +33,10 @@ install.bat
 - **.gitconfig**: Common Git configuration file for the team. Changes in this file should only be made if they are intended to be committed to this common config repository.
 - **.gitignore**: Standard `.gitignore` file for the team.
 - **.editorconfig**: [Universal](https://editorconfig.org/#pre-installed) editors configuration that specifies the type of line endings that should be used, indentation, etc.
+- **.npmrc**: npm configuration.
+- **.yarnrc.yml**: Yarn configuration.
+- **bunfig.toml**: Bun configuration.
+- **.config/uv/uv.toml**: uv configuration.
+- **.config/pip/pip.conf**: pip configuration.
 
 Note that since these files are symlinked to your home directory you can edit them here, push, and pull without needing to copy them or install them again afterward.
